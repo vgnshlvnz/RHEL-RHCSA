@@ -58,4 +58,13 @@ This will remove the image from local registry. You can verify the removal by ex
 Reference: RHCSA Red Hat Enterprise Linux 8 Training and Exam Preparation Guide Second Edition by Ashgar Ghori
 
 
+### Sample Questions
+Task 1: Launch a simple container as normal user using the latest version of ubi7 image. Configure the container to auto-start at system reboots without the need for normal user to login.
+Task 2: Launch another container as normal user using the latest version of ubi8 image with to environment variables SHELL and HOSTNAME. Configure the container to auto-start via systemd without the need for normal user to log in. Connect to the container and verify variable settings. 
+Task 3: Launch a root container and configure it to auto-start via systemd.
+Task 4: Launch a container as normal user with /data01 mapped to /data01 using the latest version of the ubi8 image. Configure a systemd service to auto-start the container on system reboots without the need for normal user to log in. Create files under the shared mount point and validate data persistence.
+Task 5: Launch a named container as normal user with host port 10000 mapped to container port 80. Employ the latest version of the ubi7 image. Configure a systemd service to auto-start the container without the need for normal user to login. Validate port mapping using an appropriate podman subcommand.
+Task 6: Launch another named container as normal user with /host_data01 mapped to /container_data01, one variable ENVIRON=Exam , and host port 1050 mapped to container port 1050. Use the latest version of the ubi8 image. Configure a systemd service to auto-start the container without the need for normal user to login. Create a file under the shared directory and validate data persistence. Verify port mapping and variable settings using appropriate podman subcommands.
+Task 7: Launch a named root container with host port 443 mapped to container port 443. Employ the latest version of the ubi7 image. Configure a systemd service to auto-start the container at system reboots. Validate port mapping using appropriate podman subcommand.
+Task 8: Launch a named container as normal user with /data01 mapped to /data01 and two variables KERN=$(uname -r) and SHELL defined. Use the latest version of the ubi8 image. Configure a systemd service to auto-start the container at system reboots without the need for normal user to login. Create a file under the shared mount point and validate data persistence. Verify port mapping using an appropriate podman subcommand. 
 
