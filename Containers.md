@@ -31,7 +31,7 @@ This will inspect the image locally, providing information on the image.
 This will remove the image from local registry. You can verify the removal by executing ```podman images```
 
 #### Run, Interact & Renove a Named Container
-1. ```podman -ti --name rhel8-base-os ubi8``` This command will do the following: download ```ubi8```, run interactive shell for the container. The ```-ti``` command achieves it whereas ```--name``` will add a name tag for the container. To exit the container, simply type ```exit```. You will fall back to localhost.
+1. ```podman run -ti --name rhel8-base-os ubi8``` This command will do the following: download ```ubi8```, run interactive shell for the container. The ```-ti``` command achieves it whereas ```--name``` will add a name tag for the container. To exit the container, simply type ```exit```. You will fall back to localhost.
 2. ```podman exec rhel8-base-os cat /etc/redhat-release``` This command will execute a command inside the container without attaching to it. The ```exec``` achieves it.
 3. ```podman attach rhel8-base-os``` This command will attach to the container we have downloaded and named earlier.
 4. ```podman rm rhel8-base-os``` This command will remove the container. You can verify by executing ```podman ps``` or ```podman ps -a```.
