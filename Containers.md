@@ -12,7 +12,7 @@ Before you begin, install necessary tools by executing this command ```sudo dnf 
 This command will search for MySQL images in ```registry.redhat.io```
 
 3. Inspect online image
-```skopeo inspect registry.redhat.io/rhel8/mysql-80```
+```skopeo inspect docker://registry.redhat.io/rhel8/mysql-80```
 This command will inspect the image MySQL 8 in online registry. It will provide versions and other relevant information pertaining to the image.
 
 4. Pull image from public repository
